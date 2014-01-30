@@ -1,0 +1,40 @@
+\usepackage{pslatex}
+%\usepackage{lmodern}
+\usetheme[
+	nat,sidebar=0.18\paperwidth,
+	style=standard,footstyle=low,TPlrimage=ocean.jpg,
+	]{Frederiksberg}
+
+% fonts and symbols
+\usepackage{textcomp}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{gensymb}
+\DeclareUnicodeCharacter{B0}{\textdegree}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage{siunitx}
+\usepackage[export]{adjustbox}
+
+% bibliography
+\usepackage[
+	backend=biber,
+	style=authoryear,
+	natbib=true,
+	url=false,
+	uniquename=init,
+	isbn=false,
+	]{biblatex}
+\setlength\bibhang{12pt}
+\def\bibfont{\footnotesize}
+\bibliography{PhD}
+
+% other stuff
+\usepackage{enumerate}
+
+% design
+\definecolor{kug}{rgb}{0.20,0.36,0.24}
+\setbeamercovered{transparent}

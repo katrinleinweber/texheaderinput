@@ -1,0 +1,51 @@
+% fonts and symbols
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\DeclareUnicodeCharacter{B0}{\textdegree}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\usepackage{wasysym}
+\usepackage{mathrsfs}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage{siunitx}
+\usepackage[version=3]{mhchem} % chemical formulae
+\sisetup{
+	separate-uncertainty=true,
+	multi-part-units=single,
+	%tophrase={\textnormal{~to~}},
+	%range-units=single
+	}
+
+% spacing
+\usepackage{setspace}
+\usepackage{needspace}
+\usepackage{placeins}
+\usepackage{floatrow}
+
+% references and links
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[colorlinks=true,citecolor=ForestGreen,linkcolor=MidnightBlue,urlcolor=BrickRed]{hyperref}
+\usepackage[
+	backend=biber,
+	style=authoryear,
+	natbib=true,
+	url=false,
+	uniquename=init,
+	]{biblatex}
+%\bibliographystyle{apalike}
+\setlength\bibhang{12pt}
+
+% figures
+\usepackage[pdftex]{graphicx} %... for use with pdflatex
+
+% other stuff
+\usepackage{enumerate}
+%\usepackage{pstricks}
+
+% title picture
+\usepackage[tt]{titlepic}
+\usepackage{datetime} % useful for \today macro
