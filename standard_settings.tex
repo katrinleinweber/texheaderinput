@@ -1,24 +1,27 @@
-% meta info
-\hypersetup{pdfauthor={Jonas Bl\"uthgen}} % ,pdftitle={}
-
-% figure caption settings
+% Figure caption settings
 \usepackage[footnotesize,bf]{caption}
 \setlength{\captionmargin}{40pt}
 
 % DOI settings
 \newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi: #1}}
 
-% tabular column setting
+% Tabular column setting
 \usepackage{array}
 \newcolumntype{x}[1]{>{\centering\hspace{0pt}}p{#1}}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
-% table of contents settings
+% Table of contents settings
 %\usepackage{tocloft}
 %\setlength{\cftparskip}{0.5pt}
 
-% control float layout
+% Control float layout
 %\makeatletter
 %\g@addto@macro\@floatboxreset\centering
 %\makeatother
 
+% Vector notation
 \renewcommand{\vec}[1]{\boldsymbol{#1}}
+%\renewcommand{\vec}[1]{\bm{#1}}
+%\renewcommand{\vec}[1]{\mathbf{#1}}

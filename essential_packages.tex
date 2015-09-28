@@ -1,4 +1,4 @@
-% fonts and symbols
+% Fonts and symbols
 \usepackage{textcomp}
 \usepackage{gensymb}
 \usepackage[utf8]{inputenc}
@@ -7,28 +7,44 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
-%\usepackage{wasysym}
-\usepackage{mathrsfs}
 \usepackage[english]{babel}
-\usepackage{csquotes}
+\usepackage{csquotes} % required by babel
+
+% SI units
 \usepackage{siunitx}
-\usepackage[version=3]{mhchem} % chemical formulae
 \sisetup{
 	separate-uncertainty=true,
 	multi-part-units=single,
-	%tophrase={\textnormal{~to~}},
-	%range-units=single
+	%tophrase={
+	%	\ifmmode
+	%		\text{\,\textendash\,}
+	%	\else
+	%		\textnormal{~to~}
+	%	\fi},
+	%range-phrase={
+	%	\ifmmode
+	%		\text{\,\textendash\,}
+	%	\else
+	%  		\thinspace\textendash\thinspace
+	%  	\fi},
 	}
 
-% spacing
-\usepackage{setspace}
-\usepackage{needspace}
-\usepackage{placeins}
-\usepackage{floatrow}
+% Double spacing
+%\usepackage{setspace}
+%\doublespacing
 
-% references and links
-\usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[colorlinks=true,citecolor=ForestGreen,linkcolor=MidnightBlue,urlcolor=BrickRed]{hyperref}
+% FloatBarrier
+\usepackage{placeins}
+
+% Links
+\usepackage[usenames,dvipsnames,table]{xcolor}
+\usepackage[
+    colorlinks=true,
+    citecolor=black, linkcolor=black, urlcolor=black,
+    %citecolor=ForestGreen,linkcolor=MidnightBlue,urlcolor=BrickRed
+    ]{hyperref}
+
+% BibTeX
 \usepackage[
 	backend=biber,
 	style=authoryear,
@@ -39,13 +55,11 @@
 %\bibliographystyle{apalike}
 \setlength\bibhang{12pt}
 
-% figures
+% Figures
 \usepackage[pdftex]{graphicx} %... for use with pdflatex
 
-% other stuff
-\usepackage{enumerate}
-%\usepackage{pstricks}
+% Other stuff
+\usepackage{enumitem}
 
-% title picture
-\usepackage[tt]{titlepic}
+% Title picture
 \usepackage{datetime} % useful for \today macro
