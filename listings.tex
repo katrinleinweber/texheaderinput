@@ -1,4 +1,18 @@
-\lstset{
+\usepackage{listings}
+
+\usepackage{color}
+\definecolor{gray}{gray}{0.3}
+\definecolor{green}{rgb}{0,0.5,0}
+\definecolor{blue}{rgb}{0,0,0.9}
+
+\lstdefinestyle{myFortran}{
+    language=Fortran,
+    basicstyle=\scriptsize,
+    numbers=left,
+}
+
+\lstdefinestyle{myPython}{
+	language=python,
 	basicstyle=\small,
 	commentstyle=\color{green},
 	stringstyle=\color{red},
@@ -8,7 +22,6 @@
 	numberblanklines=true,
 	breaklines=true, breakatwhitespace=false, breakindent=11pt,
 	frame=none,
-	language=python,
 	keywordstyle=\color{blue},
 	showstringspaces=false,
 	keywordstyle=\color{blue},
@@ -32,3 +45,5 @@
 	{<}{{\textcolor{blue}<}}{1}%
 	{>}{{\textcolor{blue}>}}{1},%
 }
+
+\lstset{}
